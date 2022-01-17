@@ -15,6 +15,13 @@ public class LeaderboardController {
 
     private final LeaderboardFacade leaderboardFacade;
 
+
+    /**
+     * GET: v1/leaderboard
+     * This API returns all profiles from .
+     * @return
+     */
+
     @GetMapping
     public List<ProfileDto> getLeaderboard() {
         return leaderboardFacade.getLeaderboard();
